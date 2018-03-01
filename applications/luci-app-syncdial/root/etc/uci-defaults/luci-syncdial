@@ -1,4 +1,19 @@
 #!/bin/sh
+cat > /etc/config/mwan3 <<EOF
+config rule 'https'
+	option sticky '1'
+	option dest_port '443'
+	option proto 'tcp'
+	option use_policy 'balanced'
+
+config rule 'default_rule'
+	option dest_ip '0.0.0.0/0'
+	option use_policy 'balanced'
+
+config policy 'balanced'
+	option last_resort 'default'
+EOF
+
 touch /etc/config/syncdial
 
 uci -q batch <<-EOF >/dev/null
