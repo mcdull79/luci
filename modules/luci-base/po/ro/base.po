@@ -216,9 +216,6 @@ msgstr "Concentrator de Access "
 msgid "Access Point"
 msgstr "Punct de Acces"
 
-msgid "Action"
-msgstr "Actiune"
-
 msgid "Actions"
 msgstr "Actiune"
 
@@ -290,6 +287,9 @@ msgstr ""
 
 msgid "Allow all except listed"
 msgstr "Permite toate cu exceptia celor listate"
+
+msgid "Allow legacy 802.11b rates"
+msgstr ""
 
 msgid "Allow listed only"
 msgstr "Permite doar cele listate"
@@ -556,9 +556,6 @@ msgid ""
 "Build/distribution specific feed definitions. This file will NOT be "
 "preserved in any sysupgrade."
 msgstr ""
-
-msgid "Buttons"
-msgstr "Butoane"
 
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
@@ -1219,6 +1216,9 @@ msgstr ""
 msgid "Forward broadcast traffic"
 msgstr ""
 
+msgid "Forward mesh peer traffic"
+msgstr ""
+
 msgid "Forwarding mode"
 msgstr ""
 
@@ -1300,9 +1300,6 @@ msgid "HE.net username"
 msgstr ""
 
 msgid "HT mode (802.11n)"
-msgstr ""
-
-msgid "Handler"
 msgstr ""
 
 msgid "Hang Up"
@@ -1884,9 +1881,6 @@ msgstr ""
 msgid "Maximum amount of seconds to wait for the modem to become ready"
 msgstr ""
 
-msgid "Maximum hold time"
-msgstr ""
-
 msgid ""
 "Maximum length of the name is 15 characters including the automatic protocol/"
 "bridge prefix (br-, 6in4-, pppoe- etc.)"
@@ -1904,11 +1898,11 @@ msgstr "Memorie"
 msgid "Memory usage (%)"
 msgstr "Utilizarea memoriei (%)"
 
+msgid "Mesh Id"
+msgstr ""
+
 msgid "Metric"
 msgstr "Metrica"
-
-msgid "Minimum hold time"
-msgstr ""
 
 msgid "Mirror monitor port"
 msgstr ""
@@ -2345,9 +2339,6 @@ msgstr ""
 
 msgid "Path to Private Key"
 msgstr "Calea catre cheia privata"
-
-msgid "Path to executable which handles the button event"
-msgstr "Calea catre executabilul care se ocupa de evenimentul butonului"
 
 msgid "Path to inner CA-Certificate"
 msgstr ""
@@ -2909,9 +2900,6 @@ msgstr "Sursa"
 msgid "Source routing"
 msgstr ""
 
-msgid "Specifies the button state to handle"
-msgstr ""
-
 msgid "Specifies the directory the device is attached to"
 msgstr ""
 
@@ -3009,6 +2997,9 @@ msgstr ""
 
 msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
+msgstr ""
+
+msgid "Switch Port Mask"
 msgstr ""
 
 msgid "Switch VLAN"
@@ -3256,9 +3247,6 @@ msgid ""
 "their status."
 msgstr ""
 
-msgid "This page allows the configuration of custom button actions"
-msgstr ""
-
 msgid "This page gives an overview over currently active network connections."
 msgstr ""
 
@@ -3440,9 +3428,9 @@ msgstr ""
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
-"address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
+"the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 
@@ -3734,6 +3722,9 @@ msgstr ""
 msgid "overlay"
 msgstr ""
 
+msgid "random"
+msgstr ""
+
 msgid "relay mode"
 msgstr ""
 
@@ -3778,6 +3769,15 @@ msgstr "da"
 
 msgid "« Back"
 msgstr "« Inapoi"
+
+#~ msgid "Action"
+#~ msgstr "Actiune"
+
+#~ msgid "Buttons"
+#~ msgstr "Butoane"
+
+#~ msgid "Path to executable which handles the button event"
+#~ msgstr "Calea catre executabilul care se ocupa de evenimentul butonului"
 
 #~ msgid "AR Support"
 #~ msgstr "Suport AR"

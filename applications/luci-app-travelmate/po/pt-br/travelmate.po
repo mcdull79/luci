@@ -138,6 +138,9 @@ msgstr ""
 msgid "Identity"
 msgstr ""
 
+msgid "Ignore BSSID"
+msgstr ""
+
 msgid "Input file not found, please check your configuration."
 msgstr ""
 
@@ -165,9 +168,6 @@ msgid "Move up"
 msgstr ""
 
 msgid "Name of the used uplink interface."
-msgstr ""
-
-msgid "Online Status"
 msgstr ""
 
 msgid "Open"
@@ -283,7 +283,10 @@ msgstr "Travelmate"
 msgid "Travelmate Logfile"
 msgstr ""
 
-msgid "Travelmate version"
+msgid "Travelmate Status"
+msgstr ""
+
+msgid "Travelmate Version"
 msgstr ""
 
 msgid "Trigger delay"
@@ -338,6 +341,9 @@ msgstr ""
 msgid "connected"
 msgstr ""
 
+msgid "error"
+msgstr ""
+
 msgid "hidden"
 msgstr ""
 
@@ -345,6 +351,9 @@ msgid "n/a"
 msgstr ""
 
 msgid "not connected"
+msgstr ""
+
+msgid "running"
 msgstr ""
 
 #~ msgid ""

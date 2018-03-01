@@ -212,9 +212,6 @@ msgstr ""
 msgid "Access Point"
 msgstr "Accesspunkt"
 
-msgid "Action"
-msgstr "Åtgärd"
-
 msgid "Actions"
 msgstr "Åtgärder"
 
@@ -286,6 +283,9 @@ msgstr "Tillåt <abbr title=\"Secure Shell\">SSH</abbr> lösenordsautentisering"
 
 msgid "Allow all except listed"
 msgstr "Tillåt alla utom listade"
+
+msgid "Allow legacy 802.11b rates"
+msgstr ""
 
 msgid "Allow listed only"
 msgstr "Tillåt enbart listade"
@@ -553,9 +553,6 @@ msgid ""
 "Build/distribution specific feed definitions. This file will NOT be "
 "preserved in any sysupgrade."
 msgstr ""
-
-msgid "Buttons"
-msgstr "Knappar"
 
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
@@ -1219,6 +1216,9 @@ msgstr ""
 msgid "Forward broadcast traffic"
 msgstr ""
 
+msgid "Forward mesh peer traffic"
+msgstr ""
+
 msgid "Forwarding mode"
 msgstr "Vidarebefordringsläge"
 
@@ -1301,9 +1301,6 @@ msgstr "HE.net-användarnamn"
 
 msgid "HT mode (802.11n)"
 msgstr "HT-läge (802.11n)"
-
-msgid "Handler"
-msgstr ""
 
 msgid "Hang Up"
 msgstr "Lägg på"
@@ -1880,9 +1877,6 @@ msgstr ""
 msgid "Maximum amount of seconds to wait for the modem to become ready"
 msgstr ""
 
-msgid "Maximum hold time"
-msgstr ""
-
 msgid ""
 "Maximum length of the name is 15 characters including the automatic protocol/"
 "bridge prefix (br-, 6in4-, pppoe- etc.)"
@@ -1900,11 +1894,11 @@ msgstr "Minne"
 msgid "Memory usage (%)"
 msgstr "Minnesanvändning (%)"
 
+msgid "Mesh Id"
+msgstr ""
+
 msgid "Metric"
 msgstr "Metrisk"
-
-msgid "Minimum hold time"
-msgstr ""
 
 msgid "Mirror monitor port"
 msgstr ""
@@ -2341,9 +2335,6 @@ msgstr "Genväg till klient-certifikat"
 
 msgid "Path to Private Key"
 msgstr "Genväg till privat nyckel"
-
-msgid "Path to executable which handles the button event"
-msgstr ""
 
 msgid "Path to inner CA-Certificate"
 msgstr "Genväg till det inre CA-certifikatet"
@@ -2904,9 +2895,6 @@ msgstr "Källa"
 msgid "Source routing"
 msgstr ""
 
-msgid "Specifies the button state to handle"
-msgstr ""
-
 msgid "Specifies the directory the device is attached to"
 msgstr ""
 
@@ -3004,6 +2992,9 @@ msgstr "Byt %q (%s)"
 
 msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
+msgstr ""
+
+msgid "Switch Port Mask"
 msgstr ""
 
 msgid "Switch VLAN"
@@ -3251,9 +3242,6 @@ msgid ""
 "their status."
 msgstr ""
 
-msgid "This page allows the configuration of custom button actions"
-msgstr ""
-
 msgid "This page gives an overview over currently active network connections."
 msgstr ""
 
@@ -3437,9 +3425,9 @@ msgstr ""
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
-"address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
+"the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 
@@ -3735,6 +3723,9 @@ msgstr "öppen"
 msgid "overlay"
 msgstr ""
 
+msgid "random"
+msgstr ""
+
 msgid "relay mode"
 msgstr "relä-läge"
 
@@ -3779,3 +3770,9 @@ msgstr "ja"
 
 msgid "« Back"
 msgstr "« Bakåt"
+
+#~ msgid "Action"
+#~ msgstr "Åtgärd"
+
+#~ msgid "Buttons"
+#~ msgstr "Knappar"

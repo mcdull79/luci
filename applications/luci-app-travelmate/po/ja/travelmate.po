@@ -146,6 +146,9 @@ msgstr "Travelmate がアップリンクへの接続を試行する回数です�
 msgid "Identity"
 msgstr "ID"
 
+msgid "Ignore BSSID"
+msgstr "BSSID の無視"
+
 msgid "Input file not found, please check your configuration."
 msgstr "入力ファイルが見つかりません。設定を確認してください。"
 
@@ -176,9 +179,6 @@ msgstr "上へ"
 
 msgid "Name of the used uplink interface."
 msgstr "使用されるアップリンク インターフェースの名前です。"
-
-msgid "Online Status"
-msgstr "オンライン ステータス"
 
 msgid "Open"
 msgstr "オープン"
@@ -308,7 +308,10 @@ msgstr "Travelmate"
 msgid "Travelmate Logfile"
 msgstr "Travelmate ログファイル"
 
-msgid "Travelmate version"
+msgid "Travelmate Status"
+msgstr "Travelmate ステータス"
+
+msgid "Travelmate Version"
 msgstr "Travelmate バージョン"
 
 msgid "Trigger delay"
@@ -363,7 +366,10 @@ msgstr ""
 "必要があります。"
 
 msgid "connected"
-msgstr "接続済み"
+msgstr "接続済"
+
+msgid "error"
+msgstr "エラー"
 
 msgid "hidden"
 msgstr "（不明）"
@@ -373,3 +379,6 @@ msgstr "利用不可"
 
 msgid "not connected"
 msgstr "未接続"
+
+msgid "running"
+msgstr "実行中"

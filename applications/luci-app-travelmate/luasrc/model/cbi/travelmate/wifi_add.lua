@@ -1,4 +1,4 @@
--- Copyright 2017 Dirk Brenken (dev@brenken.org)
+-- Copyright 2017-2018 Dirk Brenken (dev@brenken.org)
 -- This is free software, licensed under the Apache License, Version 2.0
 
 local fs       = require("nixio.fs")
@@ -34,7 +34,11 @@ else
 	wssid = m:field(Value, "ssid", translate("SSID (hidden)"))
 end
 
+nobssid = m:field(Flag, "no_bssid", translate("Ignore BSSID"))
+nobssid.default = nobssid.enabled
+
 bssid = m:field(Value, "bssid", translate("BSSID"))
+bssid:depends("no_bssid", 0)
 bssid.datatype = "macaddr"
 bssid.default = m.hidden.bssid or ""
 
@@ -97,6 +101,8 @@ elseif (tonumber(m.hidden.wpa_version) or 0) > 0 then
 		authentication:value("EAP-MD5")
 		authentication:value("EAP-MSCHAPV2")
 		authentication:value("EAP-TLS")
+		authentication:value("auth=PAP")
+		authentication:value("auth=MSCHAPV2")
 		authentication.default = "EAP-MSCHAPV2"
 
 		ident = m:field(Value, "identity", translate("Identity"))

@@ -15,6 +15,9 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.7\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "'Jail' Blocklist Creation"
+msgstr ""
+
 msgid "-------"
 msgstr "-------"
 
@@ -45,17 +48,17 @@ msgstr "备份目录"
 msgid "Backup Mode"
 msgstr ""
 
-msgid ""
-"Block access to all domains except those explicitly listed in the whitelist "
-"file."
-msgstr ""
-
 msgid "Blocklist Sources"
 msgstr "拦截列表来源"
 
 msgid ""
+"Builds an additional 'Jail' list (/tmp/adb_list.jail) to block access to all "
+"domains except those listed in the whitelist file.<br />"
+msgstr ""
+
+msgid ""
 "Caution: To prevent OOM exceptions on low memory devices with less than 64 "
-"MB free RAM, please do not select too many lists - 5-6 should be sufficient!"
+"MB free RAM, please do not select more than five blocklist sources!"
 msgstr ""
 
 msgid ""
@@ -91,6 +94,9 @@ msgid ""
 "instead."
 msgstr "启动期间不要自动更新 blocklists，改用 blocklists 的备份。"
 
+msgid "Download Utility"
+msgstr ""
+
 msgid "Download Utility (SSL Library)"
 msgstr "下载实用程序（SSL 库）"
 
@@ -108,6 +114,12 @@ msgstr "编辑设置"
 
 msgid "Edit Whitelist"
 msgstr "编辑白名单"
+
+msgid "Email Notification"
+msgstr ""
+
+msgid "Email Notification Count"
+msgstr ""
 
 msgid "Enable Adblock"
 msgstr "启用 Adblock"
@@ -129,16 +141,25 @@ msgstr "已启用"
 msgid "Extra Options"
 msgstr "额外选项"
 
+msgid "Flush DNS Cache"
+msgstr ""
+
+msgid "Flush DNS Cache after adblock processing."
+msgstr ""
+
 msgid ""
 "For SSL protected blocklist sources you need a suitable SSL library, e.g. "
-"'libustream-ssl' or the wget 'built-in'."
+"'libustream-ssl' or 'built-in'."
 msgstr ""
-"对于 SSL 保护的 blocklist 源，您需要一个合适的 SSL 库，例如'libustream-"
-"ssl'或 wget'built-in'。"
 
 msgid ""
 "For further information <a href=\"%s\" target=\"_blank\">check the online "
 "documentation</a>"
+msgstr ""
+
+msgid ""
+"For further performance improvements you can raise this value, e.g. '8' or "
+"'16' should be safe."
 msgstr ""
 
 msgid "Force Local DNS"
@@ -174,8 +195,14 @@ msgid ""
 ">"
 msgstr "支持的 DNS 后端列表及其默认列表导出目录。<br />"
 
+msgid "List of supported and fully pre-configured download utilities."
+msgstr ""
+
 msgid "Loading"
 msgstr "加载中"
+
+msgid "Max. Download Queue"
+msgstr ""
 
 msgid "No"
 msgstr "否"
@@ -200,6 +227,10 @@ msgstr ""
 msgid "Please edit this file directly in a terminal session."
 msgstr "请在终端会话中直接编辑此文件。"
 
+msgid ""
+"Please note: this needs additional 'msmtp' package installation and setup."
+msgstr ""
+
 msgid "Please update your adblock config file to use this package.<br />"
 msgstr ""
 
@@ -208,6 +239,11 @@ msgstr "查询"
 
 msgid "Query domains"
 msgstr "查询域"
+
+msgid ""
+"Raise the minimum email notification count, to get emails if the overall "
+"count is less or equal to the given limit (default 0),<br />"
+msgstr ""
 
 msgid "Redirect all DNS queries from 'lan' zone to the local resolver."
 msgstr "将所有 DNS 查询从“lan”区域重定向到本地解析器。"
@@ -223,6 +259,16 @@ msgstr "SSL 要求"
 
 msgid "Save"
 msgstr "保存"
+
+msgid ""
+"Send notification emails in case of a processing error or if domain count is "
+"&le; 0.<br />"
+msgstr ""
+
+msgid ""
+"Size of the download queue to handle downloads & list processing in parallel "
+"(default '4').<br />"
+msgstr ""
 
 msgid "Startup Trigger"
 msgstr "启动触发器"
@@ -269,6 +315,9 @@ msgid ""
 "only."
 msgstr "此表单显示系统日志输出，仅针对 adblock 相关的消息进行了预筛选。"
 
+msgid "This section contains no values yet"
+msgstr ""
+
 msgid ""
 "To overwrite the default path use the 'DNS Directory' option in the extra "
 "section below."
@@ -289,14 +338,21 @@ msgstr "正在执行命令..."
 msgid "Whitelist File"
 msgstr ""
 
-msgid "Whitelist Mode"
-msgstr ""
-
 msgid "Yes"
 msgstr "是"
 
+msgid ""
+"You can use this restrictive blocklist manually e.g. for guest wifi or "
+"kidsafe configurations."
+msgstr ""
+
 msgid "disabled"
 msgstr "已禁用"
+
+msgid ""
+"e.g. to receive an email notification with every adblock update set this "
+"value to 150000."
+msgstr ""
 
 msgid "enabled"
 msgstr "已启用"
@@ -309,6 +365,16 @@ msgstr "不可用"
 
 msgid "paused"
 msgstr "已暂停"
+
+msgid "running"
+msgstr ""
+
+#~ msgid ""
+#~ "For SSL protected blocklist sources you need a suitable SSL library, e.g. "
+#~ "'libustream-ssl' or the wget 'built-in'."
+#~ msgstr ""
+#~ "对于 SSL 保护的 blocklist 源，您需要一个合适的 SSL 库，例如'libustream-"
+#~ "ssl'或 wget'built-in'。"
 
 #~ msgid ""
 #~ "Caution: Please don't select big lists or many lists at once on low "

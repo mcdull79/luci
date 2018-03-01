@@ -213,9 +213,6 @@ msgstr "מרכז גישות"
 msgid "Access Point"
 msgstr "נקודת גישה"
 
-msgid "Action"
-msgstr "פעולה"
-
 msgid "Actions"
 msgstr "פעולות"
 
@@ -292,6 +289,9 @@ msgstr ""
 #, fuzzy
 msgid "Allow all except listed"
 msgstr "אפשר הכל חוץ מהרשומים"
+
+msgid "Allow legacy 802.11b rates"
+msgstr ""
 
 msgid "Allow listed only"
 msgstr "אפשר רשומים בלבד"
@@ -564,9 +564,6 @@ msgid ""
 "Build/distribution specific feed definitions. This file will NOT be "
 "preserved in any sysupgrade."
 msgstr ""
-
-msgid "Buttons"
-msgstr "כפתורים"
 
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
@@ -1227,6 +1224,9 @@ msgstr ""
 msgid "Forward broadcast traffic"
 msgstr ""
 
+msgid "Forward mesh peer traffic"
+msgstr ""
+
 msgid "Forwarding mode"
 msgstr ""
 
@@ -1308,9 +1308,6 @@ msgid "HE.net username"
 msgstr ""
 
 msgid "HT mode (802.11n)"
-msgstr ""
-
-msgid "Handler"
 msgstr ""
 
 msgid "Hang Up"
@@ -1887,9 +1884,6 @@ msgstr ""
 msgid "Maximum amount of seconds to wait for the modem to become ready"
 msgstr ""
 
-msgid "Maximum hold time"
-msgstr ""
-
 msgid ""
 "Maximum length of the name is 15 characters including the automatic protocol/"
 "bridge prefix (br-, 6in4-, pppoe- etc.)"
@@ -1907,10 +1901,10 @@ msgstr ""
 msgid "Memory usage (%)"
 msgstr ""
 
-msgid "Metric"
+msgid "Mesh Id"
 msgstr ""
 
-msgid "Minimum hold time"
+msgid "Metric"
 msgstr ""
 
 msgid "Mirror monitor port"
@@ -2348,9 +2342,6 @@ msgstr ""
 
 msgid "Path to Private Key"
 msgstr "נתיב למפתח הפרטי"
-
-msgid "Path to executable which handles the button event"
-msgstr ""
 
 msgid "Path to inner CA-Certificate"
 msgstr ""
@@ -2915,9 +2906,6 @@ msgstr "מקור"
 msgid "Source routing"
 msgstr ""
 
-msgid "Specifies the button state to handle"
-msgstr ""
-
 msgid "Specifies the directory the device is attached to"
 msgstr ""
 
@@ -3018,6 +3006,9 @@ msgstr ""
 
 msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
+msgstr ""
+
+msgid "Switch Port Mask"
 msgstr ""
 
 msgid "Switch VLAN"
@@ -3264,9 +3255,6 @@ msgid ""
 "their status."
 msgstr "רשימה זו מציגה סקירה של תהליכי המערכת הרצים כרגע ואת מצבם."
 
-msgid "This page allows the configuration of custom button actions"
-msgstr "דף זה מאפשר להגדיר פעולות מיוחדות עבור הלחצנים."
-
 msgid "This page gives an overview over currently active network connections."
 msgstr "דף זה מציג סקירה של חיבורי הרשת הפעילים כרגע."
 
@@ -3449,9 +3437,9 @@ msgstr "השתמש בטבלת ניתוב"
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
-"address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
+"the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 
@@ -3741,6 +3729,9 @@ msgstr ""
 msgid "overlay"
 msgstr ""
 
+msgid "random"
+msgstr ""
+
 msgid "relay mode"
 msgstr ""
 
@@ -3785,6 +3776,15 @@ msgstr "כן"
 
 msgid "« Back"
 msgstr "<< אחורה"
+
+#~ msgid "Action"
+#~ msgstr "פעולה"
+
+#~ msgid "Buttons"
+#~ msgstr "כפתורים"
+
+#~ msgid "This page allows the configuration of custom button actions"
+#~ msgstr "דף זה מאפשר להגדיר פעולות מיוחדות עבור הלחצנים."
 
 #~ msgid "AR Support"
 #~ msgstr "תמיכת AR"

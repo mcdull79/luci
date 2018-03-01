@@ -4,19 +4,11 @@ m = Map("vpnbypass", translate("VPN Bypass Settings"))
 s = m:section(NamedSection, "config", "vpnbypass")
 
 -- General options
-e = s:option(Flag, "enabled", translate("Enable/start service"))
+e = s:option(Flag, "enabled", translate("Start VPNBypass service"))
 e.rmempty = false
-
-function e.cfgvalue(self, section)
-	return self.map:get(section, "enabled") == "1" and luci.sys.init.enabled("vpnbypass") and self.enabled or self.disabled
-end
-
 function e.write(self, section, value)
-	if value == "1" then
-		luci.sys.call("/etc/init.d/vpnbypass enable >/dev/null")
-		luci.sys.call("/etc/init.d/vpnbypass start >/dev/null")
-	else
-		luci.sys.call("/etc/init.d/vpnbypass stop >/dev/null")
+	if value ~= "1" then
+		luci.sys.init.stop("vpnbypass")
 	end
 	return Flag.write(self, section, value)
 end
@@ -56,6 +48,6 @@ s4.anonymous = true
 di = s4:option(DynamicList, "ipset", translate("Domains to Bypass"),
     translate("Domains to be accessed directly (outside of the VPN tunnel), see ")
 		.. [[<a href="]] .. readmeURL .. [[#bypass-domains-formatsyntax" target="_blank">]]
-    .. translate("README") .. [[</a>]] .. translate(" for syntax"))
+    .. translate("README") .. [[</a> ]] .. translate("for syntax"))
 
 return m, d

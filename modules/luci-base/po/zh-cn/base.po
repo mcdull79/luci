@@ -7,7 +7,7 @@ msgid "%.1f dB"
 msgstr ""
 
 msgid "%s is untagged in multiple VLANs!"
-msgstr "%s 在多个 VLAN 中均未关联！"
+msgstr "%s 在多个 VLAN 中均未标记！"
 
 msgid "(%d minute window, %d second interval)"
 msgstr "（最近 %d 分钟信息，每 %d 秒刷新）"
@@ -209,9 +209,6 @@ msgstr "接入集中器"
 msgid "Access Point"
 msgstr "接入点 AP"
 
-msgid "Action"
-msgstr "动作"
-
 msgid "Actions"
 msgstr "动作"
 
@@ -282,6 +279,9 @@ msgstr "允许 <abbr title=\"Secure Shell\">SSH</abbr> 密码验证"
 
 msgid "Allow all except listed"
 msgstr "仅允许列表外"
+
+msgid "Allow legacy 802.11b rates"
+msgstr "允许传统的 802.11b 速率"
 
 msgid "Allow listed only"
 msgstr "仅允许列表内"
@@ -552,9 +552,6 @@ msgid ""
 "preserved in any sysupgrade."
 msgstr "由固件指定的软件源。此处的设置在任何系统升级中都不会被保留。"
 
-msgid "Buttons"
-msgstr "按键"
-
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr "CA 证书，如果留空，则证书将在第一次连接后被保存。"
 
@@ -651,6 +648,9 @@ msgid ""
 "workaround might cause interoperability issues and reduced robustness of key "
 "negotiation especially in environments with heavy traffic load."
 msgstr ""
+"通过禁用用于安装密钥的 EAPOL-Key 帧的重新传输，来增加客户端密钥重安装攻击的复"
+"杂度。此解决方法可能会导致互操作性问题，并降低密钥协商的可靠性，特别是在流量"
+"负载较重的环境中。"
 
 msgid "Configuration"
 msgstr "配置"
@@ -934,7 +934,7 @@ msgid "Download backup"
 msgstr "下载备份"
 
 msgid "Downstream SNR offset"
-msgstr ""
+msgstr "下游 SNR 偏移"
 
 msgid "Dropbear Instance"
 msgstr "Dropbear 实例"
@@ -1018,7 +1018,7 @@ msgid "Enable WPS pushbutton, requires WPA(2)-PSK"
 msgstr "启用 WPS 一键加密按钮，需要 WPA(2)-PSK"
 
 msgid "Enable key reinstallation (KRACK) countermeasures"
-msgstr ""
+msgstr "启用密钥重新安装（KRACK）对策"
 
 msgid "Enable learning and aging"
 msgstr "启用智能交换学习"
@@ -1120,7 +1120,7 @@ msgid "FT over the Air"
 msgstr ""
 
 msgid "FT protocol"
-msgstr ""
+msgstr "FT 协议"
 
 msgid "File"
 msgstr "文件"
@@ -1223,6 +1223,9 @@ msgstr "前向纠错秒数（FECS）"
 msgid "Forward broadcast traffic"
 msgstr "转发广播数据包"
 
+msgid "Forward mesh peer traffic"
+msgstr "转发 mesh 节点数据包"
+
 msgid "Forwarding mode"
 msgstr "转发模式"
 
@@ -1270,7 +1273,7 @@ msgid "Generate Config"
 msgstr "生成配置"
 
 msgid "Generate PMK locally"
-msgstr ""
+msgstr "本地生成 PMK"
 
 msgid "Generate archive"
 msgstr "生成备份"
@@ -1307,9 +1310,6 @@ msgstr "HE.net 用户名"
 
 msgid "HT mode (802.11n)"
 msgstr "HT 模式（802.11n）"
-
-msgid "Handler"
-msgstr "处理程序"
 
 msgid "Hang Up"
 msgstr "挂起"
@@ -1899,9 +1899,6 @@ msgstr "允许的最大 EDNS.0 UDP 数据包大小"
 msgid "Maximum amount of seconds to wait for the modem to become ready"
 msgstr "调制解调器就绪的最大等待时间（秒）"
 
-msgid "Maximum hold time"
-msgstr "最大持续时间"
-
 msgid ""
 "Maximum length of the name is 15 characters including the automatic protocol/"
 "bridge prefix (br-, 6in4-, pppoe- etc.)"
@@ -1921,11 +1918,11 @@ msgstr "内存"
 msgid "Memory usage (%)"
 msgstr "内存使用率（%）"
 
+msgid "Mesh Id"
+msgstr "Mesh ID"
+
 msgid "Metric"
 msgstr "跃点数"
-
-msgid "Minimum hold time"
-msgstr "最低持续时间"
 
 msgid "Mirror monitor port"
 msgstr "数据包镜像监听端口"
@@ -2302,7 +2299,7 @@ msgid "PIN"
 msgstr "PIN"
 
 msgid "PMK R1 Push"
-msgstr "PMK R1 Push"
+msgstr "R1 推送 PMK"
 
 msgid "PPP"
 msgstr "PPP"
@@ -2372,9 +2369,6 @@ msgstr "客户端证书路径"
 
 msgid "Path to Private Key"
 msgstr "私钥路径"
-
-msgid "Path to executable which handles the button event"
-msgstr "处理按键动作的可执行文件路径"
 
 msgid "Path to inner CA-Certificate"
 msgstr "内部 CA 证书的路径"
@@ -2511,10 +2505,10 @@ msgid "Quality"
 msgstr "质量"
 
 msgid "R0 Key Lifetime"
-msgstr "R0 Key Lifetime"
+msgstr "R0 密钥生存期"
 
 msgid "R1 Key Holder"
-msgstr "R1 Key Holder"
+msgstr "R1 密钥持有者"
 
 msgid "RFC3947 NAT-T mode"
 msgstr "RFC3947 NAT-T 模式"
@@ -2950,9 +2944,6 @@ msgstr "源地址"
 msgid "Source routing"
 msgstr "源路由"
 
-msgid "Specifies the button state to handle"
-msgstr "指定要处理的按键状态"
-
 msgid "Specifies the directory the device is attached to"
 msgstr "指定设备的挂载目录"
 
@@ -3053,6 +3044,9 @@ msgstr "交换机 %q（%s）"
 msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
 msgstr "交换机 %q 具有未知的拓扑结构，VLAN 设置可能不正确。"
+
+msgid "Switch Port Mask"
+msgstr "交换机端口掩码"
 
 msgid "Switch VLAN"
 msgstr "交换机 VLAN"
@@ -3318,9 +3312,6 @@ msgid ""
 "their status."
 msgstr "系统中正在运行的进程概况和它们的状态信息。"
 
-msgid "This page allows the configuration of custom button actions"
-msgstr "自定义按键动作。"
-
 msgid "This page gives an overview over currently active network connections."
 msgstr "活跃的网络连接概况。"
 
@@ -3504,9 +3495,9 @@ msgstr "使用路由表"
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
-"address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
+"the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 "使用“添加”按钮来增加新的租约条目。“IPv4 地址”和“主机名”字段的值将被固定分配"
@@ -3630,7 +3621,7 @@ msgstr "警告：一些未保存的配置将在重启后丢失！"
 msgid ""
 "When using a PSK, the PMK can be generated locally without inter AP "
 "communications"
-msgstr ""
+msgstr "当使用 PSK 时，PMK 可以在没有 AP 间通信的情况下在本地生成"
 
 msgid "Whether to create an IPv6 default route over the tunnel"
 msgstr "是否添加一条通向隧道的 IPv6 默认路由"
@@ -3809,6 +3800,9 @@ msgstr "开放式"
 msgid "overlay"
 msgstr "覆盖"
 
+msgid "random"
+msgstr ""
+
 msgid "relay mode"
 msgstr "中继模式"
 
@@ -3828,7 +3822,7 @@ msgid "stateless + stateful"
 msgstr "无状态的 + 有状态的"
 
 msgid "tagged"
-msgstr "已关联"
+msgstr "已标记"
 
 msgid "time units (TUs / 1.024 ms) [1000-65535]"
 msgstr "时间单位（TUs / 1.024ms）[1000-65535]"
@@ -3846,7 +3840,7 @@ msgid "unspecified -or- create:"
 msgstr "不指定或新建："
 
 msgid "untagged"
-msgstr "未关联"
+msgstr "未标记"
 
 msgid "yes"
 msgstr "是"
@@ -3865,6 +3859,30 @@ msgstr "DNS过滤器IP列表"
 
 msgid "IP list for dnsmasq to select a server.By using this, dnsmasq will only forward the reply from servers in this list if the replied ip is in the list.Or it will forward the reply from other servers.<br />Leave empty to disable this feature."
 msgstr "启用此功能后，当回复的结果在该列表内时，使用来自在列表内的DNS服务器返回的结果，否则使用列表外DNS服务器所返回的结果。<br />留空则禁用此功能。"
+
+#~ msgid "Action"
+#~ msgstr "动作"
+
+#~ msgid "Buttons"
+#~ msgstr "按键"
+
+#~ msgid "Handler"
+#~ msgstr "处理程序"
+
+#~ msgid "Maximum hold time"
+#~ msgstr "最大持续时间"
+
+#~ msgid "Minimum hold time"
+#~ msgstr "最低持续时间"
+
+#~ msgid "Path to executable which handles the button event"
+#~ msgstr "处理按键动作的可执行文件路径"
+
+#~ msgid "Specifies the button state to handle"
+#~ msgstr "指定要处理的按键状态"
+
+#~ msgid "This page allows the configuration of custom button actions"
+#~ msgstr "自定义按键动作。"
 
 #~ msgid "Leasetime"
 #~ msgstr "租用时间"
@@ -3954,7 +3972,7 @@ msgstr "启用此功能后，当回复的结果在该列表内时，使用来自
 #~ msgstr "端口 %d"
 
 #~ msgid "Port %d is untagged in multiple VLANs!"
-#~ msgstr "端口 %d 在多个 VLAN 中均未关联！"
+#~ msgstr "端口 %d 在多个 VLAN 中均未标记！"
 
 #~ msgid "VLAN Interface"
 #~ msgstr "VLAN 接口"

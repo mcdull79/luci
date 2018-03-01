@@ -225,9 +225,6 @@ msgstr "Concentrateur d'accès"
 msgid "Access Point"
 msgstr "Point d'accès"
 
-msgid "Action"
-msgstr "Action"
-
 msgid "Actions"
 msgstr "Actions"
 
@@ -301,6 +298,9 @@ msgstr ""
 
 msgid "Allow all except listed"
 msgstr "Autoriser tout sauf ce qui est listé"
+
+msgid "Allow legacy 802.11b rates"
+msgstr ""
 
 msgid "Allow listed only"
 msgstr "Autoriser seulement ce qui est listé"
@@ -574,9 +574,6 @@ msgid ""
 "Build/distribution specific feed definitions. This file will NOT be "
 "preserved in any sysupgrade."
 msgstr ""
-
-msgid "Buttons"
-msgstr "Boutons"
 
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
@@ -1272,6 +1269,9 @@ msgstr ""
 msgid "Forward broadcast traffic"
 msgstr "Transmettre le trafic de diffusion"
 
+msgid "Forward mesh peer traffic"
+msgstr ""
+
 msgid "Forwarding mode"
 msgstr "Mode de transmission"
 
@@ -1356,9 +1356,6 @@ msgstr ""
 
 msgid "HT mode (802.11n)"
 msgstr ""
-
-msgid "Handler"
-msgstr "Gestionnaire"
 
 msgid "Hang Up"
 msgstr "Signal (HUP)"
@@ -1965,9 +1962,6 @@ msgstr "Taille maximum autorisée des paquets UDP EDNS.0"
 msgid "Maximum amount of seconds to wait for the modem to become ready"
 msgstr "Délai d'attente maximum que le modem soit prêt"
 
-msgid "Maximum hold time"
-msgstr "Temps de maintien maximum"
-
 msgid ""
 "Maximum length of the name is 15 characters including the automatic protocol/"
 "bridge prefix (br-, 6in4-, pppoe- etc.)"
@@ -1985,11 +1979,11 @@ msgstr "Mémoire"
 msgid "Memory usage (%)"
 msgstr "Utilisation Mémoire (%)"
 
+msgid "Mesh Id"
+msgstr ""
+
 msgid "Metric"
 msgstr "Metrique"
-
-msgid "Minimum hold time"
-msgstr "Temps de maintien mimimum"
 
 msgid "Mirror monitor port"
 msgstr ""
@@ -2434,9 +2428,6 @@ msgstr "Chemin du certificat-client"
 
 msgid "Path to Private Key"
 msgstr "Chemin de la clé privée"
-
-msgid "Path to executable which handles the button event"
-msgstr "Chemin du programme exécutable gérant les évènements liés au bouton"
 
 msgid "Path to inner CA-Certificate"
 msgstr ""
@@ -3021,9 +3012,6 @@ msgstr "Source"
 msgid "Source routing"
 msgstr ""
 
-msgid "Specifies the button state to handle"
-msgstr "Indique l'état du bouton à gérer"
-
 msgid "Specifies the directory the device is attached to"
 msgstr "Indique le répertoire auquel le périphérique est rattaché"
 
@@ -3127,6 +3115,9 @@ msgstr "Commutateur %q (%s)"
 
 msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
+msgstr ""
+
+msgid "Switch Port Mask"
 msgstr ""
 
 msgid "Switch VLAN"
@@ -3430,9 +3421,6 @@ msgstr ""
 "Cette liste donne une vue d'ensemble des processus en exécution et leur "
 "statut."
 
-msgid "This page allows the configuration of custom button actions"
-msgstr "Cette page permet la configuration d'actions spécifiques des boutons"
-
 msgid "This page gives an overview over currently active network connections."
 msgstr ""
 "Cette page donne une vue d'ensemble des connexions réseaux actuellement "
@@ -3622,9 +3610,9 @@ msgstr "Utiliser la table de routage"
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
-"address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
+"the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 "Utiliser le bouton <em>Ajouter</em> pour créer un nouveau bail. "
@@ -3926,6 +3914,9 @@ msgstr "ouvrir"
 msgid "overlay"
 msgstr ""
 
+msgid "random"
+msgstr ""
+
 msgid "relay mode"
 msgstr ""
 
@@ -3970,6 +3961,31 @@ msgstr "oui"
 
 msgid "« Back"
 msgstr "« Retour"
+
+#~ msgid "Action"
+#~ msgstr "Action"
+
+#~ msgid "Buttons"
+#~ msgstr "Boutons"
+
+#~ msgid "Handler"
+#~ msgstr "Gestionnaire"
+
+#~ msgid "Maximum hold time"
+#~ msgstr "Temps de maintien maximum"
+
+#~ msgid "Minimum hold time"
+#~ msgstr "Temps de maintien mimimum"
+
+#~ msgid "Path to executable which handles the button event"
+#~ msgstr "Chemin du programme exécutable gérant les évènements liés au bouton"
+
+#~ msgid "Specifies the button state to handle"
+#~ msgstr "Indique l'état du bouton à gérer"
+
+#~ msgid "This page allows the configuration of custom button actions"
+#~ msgstr ""
+#~ "Cette page permet la configuration d'actions spécifiques des boutons"
 
 #~ msgid "Leasetime"
 #~ msgstr "Durée du bail"

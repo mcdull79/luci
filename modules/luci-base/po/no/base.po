@@ -219,9 +219,6 @@ msgstr "Tilgangskonsentrator"
 msgid "Access Point"
 msgstr "Aksesspunkt"
 
-msgid "Action"
-msgstr "Handling"
-
 msgid "Actions"
 msgstr "Handlinger"
 
@@ -292,6 +289,9 @@ msgstr "Tillat <abbr title=\"Secure Shell\">SSH</abbr> passord godkjenning"
 
 msgid "Allow all except listed"
 msgstr "Tillat alle unntatt oppførte"
+
+msgid "Allow legacy 802.11b rates"
+msgstr ""
 
 msgid "Allow listed only"
 msgstr "Tillat kun oppførte"
@@ -560,9 +560,6 @@ msgid ""
 "Build/distribution specific feed definitions. This file will NOT be "
 "preserved in any sysupgrade."
 msgstr ""
-
-msgid "Buttons"
-msgstr "Knapper"
 
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
@@ -1249,6 +1246,9 @@ msgstr ""
 msgid "Forward broadcast traffic"
 msgstr "Videresend kringkastingstrafikk"
 
+msgid "Forward mesh peer traffic"
+msgstr ""
+
 msgid "Forwarding mode"
 msgstr "Videresending modus"
 
@@ -1331,9 +1331,6 @@ msgstr ""
 
 msgid "HT mode (802.11n)"
 msgstr ""
-
-msgid "Handler"
-msgstr "Behandler"
 
 msgid "Hang Up"
 msgstr "Slå av"
@@ -1928,9 +1925,6 @@ msgstr "Maksimal tillatt størrelse på EDNS.0 UDP-pakker"
 msgid "Maximum amount of seconds to wait for the modem to become ready"
 msgstr "Maksimalt antall sekunder å vente på at modemet skal bli klart"
 
-msgid "Maximum hold time"
-msgstr "Maksimal holde tid"
-
 msgid ""
 "Maximum length of the name is 15 characters including the automatic protocol/"
 "bridge prefix (br-, 6in4-, pppoe- etc.)"
@@ -1948,11 +1942,11 @@ msgstr "Minne"
 msgid "Memory usage (%)"
 msgstr "Minne forbruk (%)"
 
+msgid "Mesh Id"
+msgstr ""
+
 msgid "Metric"
 msgstr "Metrisk"
-
-msgid "Minimum hold time"
-msgstr "Minimum holde tid"
 
 msgid "Mirror monitor port"
 msgstr ""
@@ -2399,9 +2393,6 @@ msgstr "Sti til klient-sertifikat"
 
 msgid "Path to Private Key"
 msgstr "Sti til privatnøkkel"
-
-msgid "Path to executable which handles the button event"
-msgstr "Sti til program som håndterer handling ved bruk av knapp"
 
 msgid "Path to inner CA-Certificate"
 msgstr ""
@@ -2984,9 +2975,6 @@ msgstr "Kilde"
 msgid "Source routing"
 msgstr ""
 
-msgid "Specifies the button state to handle"
-msgstr "Spesifiserer knappens handlemønster"
-
 msgid "Specifies the directory the device is attached to"
 msgstr "Hvor lagrings enheten blir tilsluttet filsystemet (f.eks. /mnt/sda1)"
 
@@ -3088,6 +3076,9 @@ msgstr "Svitsj %q (%s)"
 
 msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
+msgstr ""
+
+msgid "Switch Port Mask"
 msgstr ""
 
 msgid "Switch VLAN"
@@ -3384,10 +3375,6 @@ msgid ""
 "their status."
 msgstr "Denne listen gir en oversikt over kjørende prosesser og deres status."
 
-msgid "This page allows the configuration of custom button actions"
-msgstr ""
-"Denne siden gir mulighet for å definerte egne knappers handlingsmønster"
-
 msgid "This page gives an overview over currently active network connections."
 msgstr ""
 "Denne siden gir en oversikt over gjeldende aktive nettverkstilkoblinger."
@@ -3575,9 +3562,9 @@ msgstr "Bruk rutingtabellen"
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
-"address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
+"the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 "Bruk <em>Legg til</em> knappen får å legge til en leieavtale. <em>MAC-"
@@ -3881,6 +3868,9 @@ msgstr "åpen"
 msgid "overlay"
 msgstr ""
 
+msgid "random"
+msgstr ""
+
 msgid "relay mode"
 msgstr ""
 
@@ -3925,6 +3915,31 @@ msgstr "ja"
 
 msgid "« Back"
 msgstr "« Tilbake"
+
+#~ msgid "Action"
+#~ msgstr "Handling"
+
+#~ msgid "Buttons"
+#~ msgstr "Knapper"
+
+#~ msgid "Handler"
+#~ msgstr "Behandler"
+
+#~ msgid "Maximum hold time"
+#~ msgstr "Maksimal holde tid"
+
+#~ msgid "Minimum hold time"
+#~ msgstr "Minimum holde tid"
+
+#~ msgid "Path to executable which handles the button event"
+#~ msgstr "Sti til program som håndterer handling ved bruk av knapp"
+
+#~ msgid "Specifies the button state to handle"
+#~ msgstr "Spesifiserer knappens handlemønster"
+
+#~ msgid "This page allows the configuration of custom button actions"
+#~ msgstr ""
+#~ "Denne siden gir mulighet for å definerte egne knappers handlingsmønster"
 
 #~ msgid "Leasetime"
 #~ msgstr "<abbr title=\"Leasetime\">Leietid</abbr>"
