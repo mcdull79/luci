@@ -1,4 +1,6 @@
 #!/bin/sh
+[ -f /etc/config/syncdial ] && exit
+
 cat > /etc/config/mwan3 <<EOF
 config rule 'https'
 	option sticky '1'
