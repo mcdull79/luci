@@ -778,6 +778,11 @@ msgid "Custom feeds"
 msgstr "Список custom-ных feed-ов"
 
 msgid ""
+"Custom files (certificates, scripts) may remain on the system. To prevent "
+"this, perform a factory-reset first."
+msgstr ""
+
+msgid ""
 "Customizes the behaviour of the device <abbr title=\"Light Emitting Diode"
 "\">LED</abbr>s if possible."
 msgstr ""
@@ -2235,6 +2240,9 @@ msgstr "Заметка"
 msgid "Nslookup"
 msgstr "DNS-запрос"
 
+msgid "Number of cached DNS entries (max is 10000, 0 is no caching)"
+msgstr ""
+
 msgid "OK"
 msgstr "OK"
 
@@ -3043,6 +3051,9 @@ msgstr "Размер"
 msgid "Size (.ipk)"
 msgstr "Размер (.ipk)"
 
+msgid "Size of DNS query cache"
+msgstr ""
+
 msgid "Skip"
 msgstr "Пропустить"
 
@@ -3471,10 +3482,10 @@ msgstr ""
 
 msgid ""
 "This is the local endpoint address assigned by the tunnel broker, it usually "
-"ends with <code>:2</code>"
+"ends with <code>...:2/64</code>"
 msgstr ""
 "Это локальный адрес, назначенный туннельным брокером, обычно заканчивается "
-"на <code>:2</code>."
+"на <code>...:2/64</code>."
 
 msgid ""
 "This is the only <abbr title=\"Dynamic Host Configuration Protocol\">DHCP</"

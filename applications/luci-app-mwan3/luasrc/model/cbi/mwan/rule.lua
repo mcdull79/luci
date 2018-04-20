@@ -3,6 +3,7 @@
 -- Licensed to the public under the GNU General Public License v2.
 
 dsp = require "luci.dispatcher"
+uci = require "uci"
 
 
 function ruleCheck()
@@ -28,7 +29,7 @@ function ruleWarn(rule_error)
 	local warnings = ""
 	for i, k in pairs(rule_error) do
 		if rule_error[i] == true then
-			warnings = warnings .. string.format("<strong>%s</strong></br>",
+			warnings = warnings .. string.format("<strong>%s</strong><br />",
 				translatef("WARNING: Rule %s have a port configured with no or improper protocol specified!", i)
 				)
 		end

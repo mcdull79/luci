@@ -2,6 +2,7 @@
 -- Licensed to the public under the Apache License 2.0.
 
 local ipc = require "luci.ip"
+local sys = require "luci.sys"
 local o
 require "luci.util"
 
@@ -118,7 +119,7 @@ s:taboption("advanced", Flag, "allservers",
 s:taboption("advanced", Value, "serversfile",
 	translate("Additional servers file"),
 	translate("This file may contain lines like 'server=/domain/1.2.3.4' or 'server=1.2.3.4' for"..
-	        "domain-specific or full upstream <abbr title=\"Domain Name System\">DNS</abbr> servers."))
+		"domain-specific or full upstream <abbr title=\"Domain Name System\">DNS</abbr> servers."))
 
 s:taboption("advanced", Flag, "strictorder",
 	translate("Strict order"),
@@ -221,6 +222,12 @@ cq.optional = true
 cq.datatype = "uinteger"
 cq.placeholder = 150
 
+cs = s:taboption("advanced", Value, "cachesize",
+	translate("Size of DNS query cache"),
+	translate("Number of cached DNS entries (max is 10000, 0 is no caching)"))
+cs.optional = true
+cs.datatype = "range(0,10000)"
+cs.placeholder = 150
 
 s:taboption("tftp", Flag, "enable_tftp",
 	translate("Enable TFTP server")).optional = true
@@ -283,7 +290,7 @@ s.anonymous = true
 s.template = "cbi/tblsection"
 
 name = s:option(Value, "name", translate("Hostname"))
-name.datatype = "hostname"
+name.datatype = "hostname('strict')"
 name.rmempty  = true
 
 function name.write(self, section, value)
@@ -304,7 +311,7 @@ ip = s:option(Value, "ip", translate("<abbr title=\"Internet Protocol Version 4\
 ip.datatype = "or(ip4addr,'ignore')"
 
 time = s:option(Value, "leasetime", translate("Lease time"))
-time.rmempty  = true
+time.rmempty = true
 
 duid = s:option(Value, "duid", translate("<abbr title=\"The DHCP Unique Identifier\">DUID</abbr>"))
 duid.datatype = "and(rangelength(20,36),hexstring)"
@@ -321,10 +328,10 @@ end
 
 hostid = s:option(Value, "hostid", translate("<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Suffix (hex)"))
 
-ipc.neighbors({ family = 4 }, function(n)
-	if n.mac and n.dest then
-		ip:value(n.dest:string())
-		mac:value(n.mac, "%s (%s)" %{ n.mac, n.dest:string() })
+sys.net.host_hints(function(m, v4, v6, name)
+	if m and v4 then
+		ip:value(v4)
+		mac:value(m, "%s (%s)" %{ m, name or v4 })
 	end
 end)
 
